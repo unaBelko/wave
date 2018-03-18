@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/AppTheme"
+    android:background="@color/background">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen"/>
+
+    <TextView
+        android:id="@+id/tv_userNameTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome, arma_best"
+        android:layout_marginTop="15dp"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        android:layout_gravity="center"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_height="4dp"
+        android:background="@color/lightGreen"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp">
+        <ImageView
+            android:id="@+id/iv_utakmice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/utakmice"/>
+        <ImageView
+            android:id="@+id/iv_listicAktivan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/listic_akitvan"
+            android:layout_alignParentRight="true"/>
+        <ImageView
+            android:id="@+id/iv_historijaListica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/historija_listica"
+            android:layout_below="@+id/iv_listicAktivan"
+            android:layout_marginTop="25dp"/>
+        <ImageView
+            android:id="@+id/iv_results"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/tablequick"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_listicAktivan"
+            android:layout_marginTop="25dp"/>
+        <ImageView
+            android:id="@+id/iv_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/profile"
+            android:layout_below="@+id/iv_results"
+            android:layout_marginTop="25dp"/>
+        <ImageView
+            android:id="@+id/iv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/iv_results"
+            android:layout_marginTop="25dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_help"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help"
+        android:layout_marginTop="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="My Player"
+            android:textColor="#ffffff"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/profile_pic" />
+
+        <TextView
+            android:id="@+id/txt_firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Firstname Lastname"
+            android:textColor="@color/lightGreen"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Club: "
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_club"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Position"
+                android:textColor="@color/lightGreen"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Position: "
+                android:textColor="#ffffff"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_position"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Position"
+                android:textColor="@color/lightGreen"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="OVERALL"
+            android:textColor="@color/lightGreen"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                android:id="@+id/pb_Overall"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:progressDrawable="@drawable/progress_design"
+                android:secondaryProgress="100" />
+
+            <TextView
+                android:id="@+id/txt_overall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/pb_Overall"
+                android:layout_alignLeft="@+id/pb_Overall"
+                android:layout_alignRight="@+id/pb_Overall"
+                android:layout_alignTop="@+id/pb_Overall"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ATTRIBUTES"
+            android:textColor="#ffffff"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/lightGreen30Opacity"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_points"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Points: 100"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginRight="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Playmaking:"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_playmaking"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_design"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/txt_playmaking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pb_playmaking"
+                    android:layout_alignLeft="@+id/pb_playmaking"
+                    android:layout_alignRight="@+id/pb_playmaking"
+                    android:layout_alignTop="@+id/pb_playmaking"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Defense"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginRight="129dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_defense"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_design"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/txt_defense"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pb_defense"
+                    android:layout_alignLeft="@+id/pb_defense"
+                    android:layout_alignRight="@+id/pb_defense"
+                    android:layout_alignTop="@+id/pb_defense"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shooting"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginRight="125dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_shooting"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_design"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/txt_shooting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pb_shooting"
+                    android:layout_alignLeft="@+id/pb_shooting"
+                    android:layout_alignRight="@+id/pb_shooting"
+                    android:layout_alignTop="@+id/pb_shooting"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Speed"
+                android:layout_gravity="center"
+                android:layout_marginRight="144dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_speed"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_design"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/txt_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pb_speed"
+                    android:layout_alignLeft="@+id/pb_speed"
+                    android:layout_alignRight="@+id/pb_speed"
+                    android:layout_alignTop="@+id/pb_speed"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Attack"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:layout_marginRight="142dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                >
+
+                <ProgressBar
+                    android:id="@+id/pb_attack"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/progress_design"
+                    android:secondaryProgress="100" />
+
+                <TextView
+                    android:id="@+id/txt_attack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/pb_attack"
+                    android:layout_alignLeft="@+id/pb_attack"
+                    android:layout_alignRight="@+id/pb_attack"
+                    android:layout_alignTop="@+id/pb_attack"
+                    android:gravity="center"
+                    android:text="0"
+                    android:textColor="#ffffff"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/lightGreen" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_team1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Team 1"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_time_match"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="20:00"
+                android:textColor="#ffffff"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_team2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:text="Team 2"
+                android:textColor="#ffffff"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="260dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightGreen"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="4"
+                                android:text="WINNER"
+                                android:textColor="#ffffff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/greenLine" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/lightGreen30Opacity"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="60dp"
+                            android:orientation="vertical"
+                            android:layout_centerVertical="true">
+                            <TextView
+                                android:id="@+id/tv_winner_1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:background="@color/lightGreen30Opacity"
+                                android:text="1"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/tv_home_odds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:layout_marginLeft="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_winner_x"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:background="@color/lightGreen30Opacity"
+                                android:text="X"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/tv_draw_odds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical">
+                            <TextView
+                                android:id="@+id/tv_winner_2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:paddingRight="20dp"
+                                android:background="@color/lightGreen30Opacity"
+                                android:text="2"
+                                android:textColor="#ffffff"
+                                android:textSize="20sp" />
+                            <TextView
+                                android:id="@+id/tv_away_odds"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1"
+                                android:layout_gravity="center"
+                                android:textColor="#ffffff"
+                                android:textSize="17sp" />
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/lightGreen"
+                        android:paddingBottom="5dp"
+                        android:paddingTop="5dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_weight="4"
+                                android:text="GOAL"
+                                android:textColor="#ffffff"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="8dp"
+                        android:background="@color/greenLine" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/lightGreen30Opacity"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_goal_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="60dp"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:background="@color/lightGreen30Opacity"
+                            android:text="-"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingLeft="20dp"
+                            android:paddingRight="20dp"
+                            android:text="2.5"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/tv_goal_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="60dp"
+                            android:paddingLeft="20dp"
+                            android:background="@color/lightGreen30Opacity"
+                            android:paddingRight="20dp"
+                            android:text="+"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp" />
+
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_bet"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bet_button" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
